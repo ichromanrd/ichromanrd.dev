@@ -5,3 +5,7 @@ title = 'My New Hugo Site'
 [module]
   [[module.imports]]
     path = "github.com/nanxiaobei/hugo-paper"
+	
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
