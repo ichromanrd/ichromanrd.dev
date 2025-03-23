@@ -1,6 +1,6 @@
-baseURL = '/'
+baseURL = 'https://ichromanrd.dev'
 languageCode = 'en-us'
-title = 'Hello! I am Didit - an Engineer'
+title = 'My Sanctuary'
 
 [module]
   [[module.imports]]
