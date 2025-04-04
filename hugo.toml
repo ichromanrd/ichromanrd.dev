@@ -1,11 +1,36 @@
 baseURL = 'https://ichromanrd.dev'
 languageCode = 'en-us'
 title = 'My Sanctuary'
+theme = 'hugo-noir'
 
-[module]
-  [[module.imports]]
-    path = "github.com/nanxiaobei/hugo-paper"
+relativeURLs = true
+canonifyURLs = true
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 	
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+name = "Ichroman Raditya"
+location = "South Tangerang, Banten, Indonesia"
+description = "A Dad, Husband, Lifelong Learner and Software Craftsman"
+profile_image = "/images/profile.jpg"
+
+# Social Media Links
+github = "https://github.com/ichromanrd"
+email = "ichromanrd@gmail.com"
+twitter = "https://twitter.com/ichromanrd"
+linkedin = "https://linkedin.com/in/ichromanrd"
+# instagram = "https://instagram.com/yourusername"
+
+[params.socialIcons]
+github = "https://github.com/ichromanrd"
+twitter = "https://twitter.com/ichromanrd"
+linkedin = "https://linkedin.com/in/ichromanrd"
+# instagram = "https://instagram.com/yourusername"
+email = "mailto:ichromanrd@gmail.com"
