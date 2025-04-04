@@ -18,7 +18,7 @@ bin-release/
 *.apk
 
 # Hugo
-public/
+# public/
 
 # Backup Files
 *.markdown~
