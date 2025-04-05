@@ -1,0 +1,26 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
+
+# Redirect all 404s to the Gatsby custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404
+
+# Enable HTTPS
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block" 
